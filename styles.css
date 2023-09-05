@@ -1,0 +1,211 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #f3ffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #32546e;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.feature {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #ffffff;
+}
+/* menu items style */
+.menu-link {
+    display: inline-block;
+  padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid transparent;
+   transition: border-color 0.3s;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px ;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+}
+
+.menu-link:hover {
+    border-color: lightblue; /* Show a light blue border when hovering */
+}
+
+/* button style */
+button, .button, .cta-button {
+    background-color: rgb(199, 241, 239);
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+button:hover, .button:hover, .cta-button:hover {
+    background-color: rgba(191, 212, 255, 0.568);
+    color: black;
+}
+
+
+.body-content {
+    padding-top: 25px; /* Adjust this value as needed */
+}
+
+/* features section on home screen */
+
+.hero-section {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    /* Other styles for hero */
+}
+
+.features {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 50px 0;
+    /* Other styles for features */
+}
+
+.feature {
+    width: calc(33.33% - 26px); /* Adjust as needed */
+    margin: 13px;
+    padding: 20px; /* Padding inside the feature box */
+    box-sizing: border-box; /* Include padding in width calculation */
+    /* Other styles for features */
+}
+
+.feature:first-child {
+    margin-left: 13px;
+}
+
+.feature:last-child {
+    margin-right: 13px;
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .feature {
+        width: calc(100% - 26px); /* Full width for stacking */
+    }
+
+    .feature:first-child,
+    .feature:last-child {
+        margin: 13px;
+    }
+}
+
+
+.footer-section {
+    padding-top: 20px; /* Adjust this value as needed */
+}
+
+/* Add styles for your footer links */
+.footer-links ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center links horizontally */
+}
+
+.footer-links li {
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333; /* Adjust link color */
+}
+
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-links ul {
+        flex-direction: column; /* Stack links on small screens */
+        align-items: center; /* Center links vertically */
+    }
+
+    .footer-links li {
+        margin: 5px 0; /* Adjust spacing between stacked links */
+        
+    }
+}
+

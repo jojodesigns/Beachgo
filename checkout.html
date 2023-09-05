@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="item.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="listings.html" class="menu-link">Listings</a></li>
+                <li><a href="register.html" class="menu-link">Register</a></li>
+                <li><a href="login.html" class="menu-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="body-content">
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+        <section class="checkout-summary">
+            <h2>Order Summary</h2>
+            <div class="item">
+                <img src="beach_umbrella.jpg" alt="Beach Umbrella">
+                <p>Beach Umbrella</p>
+                <p>Price: $10 per day</p>
+            </div>
+            <div class="total">
+                <p>Total: $20</p>
+            </div>
+        </section>
+        <section class="payment-form">
+            <h2>Payment Information</h2>
+            <form action="payment_handler.php" method="post">
+                <label for="card_number">Card Number:</label>
+                <input type="text" id="card_number" name="card_number" required>
+                
+                <label for="expiration">Expiration Date:</label>
+                <input type="text" id="expiration" name="expiration" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                
+                <button type="submit" class="cta-button">Submit Payment</button>
+            </form>
+        </section>
+    </main>
+    <section class="footer-section">
+        <footer>
+            <p>&copy; 2023 Beach Rentals. All rights reserved.</p>
+        </footer>
+        </body>
+    </section>
+    <script src="main.js"></script>
+    <script src="utilities.js"></script>
+    <script src="item.js"></script>
+</body>
+</html>

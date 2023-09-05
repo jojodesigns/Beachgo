@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="listings.html" class="menu-link">Listings</a></li>
+                <li><a href="register.html" class="menu-link">Register</a></li>
+                <li><a href="login.html" class="menu-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="body-content">
+    <main class="contact-support-container">
+        <h1>Contact Support</h1>
+        <section class="contact-form">
+            <p>If you have any questions or concerns, please fill out the form below:</p>
+            <form action="submit_support_request.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit"  class="cta-button">Submit</button>
+            </form>
+        </section>
+    </main>
+    </div>
+    <section class="footer-section">
+        <footer>
+            <p>&copy; 2023 Beach Rentals. All rights reserved.</p>
+        </footer>
+        </body>
+    </section>
+    <script src="main.js"></script>
+    <script src="utilities.js"></script>
+    <script src="forms.js"></script>
+</body>
+</html>
